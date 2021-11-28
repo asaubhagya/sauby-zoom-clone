@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "peerServer": "peerjs --port 3001",
+    "expressServer": "node server.js",
+    "start": "npm run peerServer & npm run expressServer",
     "devStart": "nodemon server.js"
   },
   "keywords": [],
@@ -12,7 +15,9 @@
   "dependencies": {
     "ejs": "^3.1.3",
     "express": "^4.17.1",
-    "socket.io": "^2.3.0",
+    "i": "^0.3.7",
+    "peer": "^0.6.1",
+    "socket.io": "^2.4.1",
     "uuid": "^8.1.0"
   },
   "devDependencies": {
