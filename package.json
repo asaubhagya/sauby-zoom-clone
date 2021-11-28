@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "peerServer": "peerjs --port 3001",
+    "peerServer": "peerjs --port 9000",
     "expressServer": "node server.js",
     "start": "npm run peerServer & npm run expressServer",
     "devStart": "nodemon server.js"
